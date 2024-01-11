@@ -2,6 +2,32 @@ import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
   {
+    avatar: "1f43c",
+    name: "产品经理",
+    context: [
+      {
+        id: "pm-0",
+        role: "user",
+        content:
+        "请确认我的以下请求。请您作为产品经理回复我。我将会提供一个主题，您将帮助我编写一份包括以下章节标题的PRD文档：主题、简介、问题陈述、目标与目的、用户故事、技术要求、收益、KPI指标、开发风险以及结论。在我要求具体主题、功能或开发的PRD之前，请不要先写任何一份PRD文档。",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 0.8,
+      max_tokens: 4000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 6,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1704943636537,
+  },
+  {
     avatar: "1f5bc-fe0f",
     name: "以文搜图",
     context: [
